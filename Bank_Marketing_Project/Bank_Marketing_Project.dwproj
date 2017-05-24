@@ -6,10 +6,31 @@
     <Name>Bank_Marketing_Project.database</Name>
     <FullPath>Bank_Marketing_Project.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Bank Marketing.ds</Name>
+      <FullPath>Bank Marketing.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Bank Marketing</Id>
+            <Name>Bank Marketing</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=PARKJW-PC;Integrated Security=SSPI;Initial Catalog=Bank_Marketing</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Bank Marketing</Id>
+            <Name>Bank Marketing</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
