@@ -18,16 +18,6 @@
       <FullPath>Bank Marketing.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
-  <MiningModels>
-    <ProjectItem>
-      <Name>DT.dmm</Name>
-      <FullPath>DT.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Clustering.dmm</Name>
-      <FullPath>Clustering.dmm</FullPath>
-    </ProjectItem>
-  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
