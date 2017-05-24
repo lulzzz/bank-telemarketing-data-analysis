@@ -1,0 +1,531 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7135db6c-f4a0-4f6e-82ae-f5ed4ce33618" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Clustering</ID>
+  <Name>Clustering</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Bank_Marketing$</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7589b8d3-8e22-47fa-bddd-b68c59d6c7b5">
+    <DataSourceViewID>Bank Marketing</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a112635f-8beb-4a25-9360-2159f6ace21d">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="970dcc01-f194-4297-b107-02009d39b394">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ce77d07-ac86-4297-9d5a-f23ee566009d">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="949faca5-786f-40e1-b4ea-ce2aebe6d042">
+      <ID>Campaign</ID>
+      <Name>Campaign</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a58282f-506e-4915-ab47-47f1f4ee665b">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11c3ec50-b016-46ca-94ca-6ba0bc28475b">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>campaign</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8ab09690-3586-417b-ad29-c1b76c41838f">
+      <ID>Cons#conf#idx</ID>
+      <Name>Cons#conf#idx</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="570ffac4-bf94-48f0-8fda-1bf019519a4e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46b47541-e3b5-4388-ab73-8a55fb82ec4c">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>cons_x0023_conf_x0023_idx</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c113c353-6a2f-472e-afa6-3f0272865ed1">
+      <ID>Cons#price#idx</ID>
+      <Name>Cons#price#idx</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb30c9ee-69d6-42ad-9d96-eb20ad5c7fd0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ffa820a-86e7-4fb9-95e3-60fc9dc3266a">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>cons_x0023_price_x0023_idx</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="13862468-7ce5-4f26-aea7-bf568c84d999">
+      <ID>Contact</ID>
+      <Name>Contact</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9757238c-83c4-46e3-8b50-86400cc4ec4a">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="134a0c84-727f-42cb-953d-f9bb2d430720">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8acc2e4c-017e-4250-85ef-63d0df9704d3">
+      <ID>Day Of Week</ID>
+      <Name>Day Of Week</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="571119b4-b862-4ef4-b60b-89f89c74fb2d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="108f1fb9-107e-4cb0-a4e7-bc33b55269f6">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>day_of_week</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="104850a1-c6df-4d9c-8300-e57a38cc9a15">
+      <ID>Default</ID>
+      <Name>Default</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ee530e1-0e35-4a40-a83b-781bec8b4ceb">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecc02fa6-e149-44fa-b6fe-0eb80f13597f">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>default</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="77a95636-5880-4fa1-b491-5659fefe3af3">
+      <ID>Duration</ID>
+      <Name>Duration</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f86a239e-0e2a-4e1f-85ca-04b77c2ee6ee">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e30ee1a2-747a-469f-ba12-81dbe867ced7">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>duration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6b3d3f3f-2aba-43cf-aa19-9ddb61cdcd40">
+      <ID>Education</ID>
+      <Name>Education</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49387c37-bda6-4334-96b1-ea89c9f8ebcc">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ad8d95d-ae3b-42ed-a71a-bdfca867ac10">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>education</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e7ce2a9c-3cd5-4269-ae5a-2b3dc1bed027">
+      <ID>Emp#var#rate</ID>
+      <Name>Emp#var#rate</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3a30695-5ac7-4f82-92cf-143a6b9e5e44">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c7df7f0-ef53-4b40-9e27-9311784e0ea0">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>emp_x0023_var_x0023_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b2d1da8e-f98d-45bb-b157-7a1eeaa5f504">
+      <ID>Euribor3m</ID>
+      <Name>Euribor3m</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="865f7f19-dbca-428a-96c0-cf506d3c69f0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6efe88a-824e-4a08-a05e-8f364e31e7f0">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>euribor3m</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4343f530-2540-4342-b8c5-8cdd7e55a725">
+      <ID>Housing</ID>
+      <Name>Housing</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e2f1166-5732-42f4-9055-d80c582ce3df">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8770e02-1abf-44cb-8610-60effee170f3">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>housing</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3c337a5c-316f-46b5-8920-ea4c3328f53d">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5016d95f-8269-47ad-a0bb-2e49dafca9ab">
+          <DataType>WChar</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="deba04d5-c9e9-4eb2-86b8-4edbc6a403e4">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a47065fe-3a15-4b39-a5b7-11e0cccae3ee">
+      <ID>Job</ID>
+      <Name>Job</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="693023a3-31a7-4205-9b8b-6fd7712378fe">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec73df4b-d460-49a8-b02d-e7eb5b7bdee2">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>job</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fb8daf2e-4548-44d0-953d-c933057cbf7c">
+      <ID>Loan</ID>
+      <Name>Loan</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ccdc66cb-b252-4d0c-bf94-fca737408a8e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5328091e-cf7a-4d9f-aec1-a0acdcaee24d">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>loan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d40429ff-b4a0-48be-851d-d5dd4e2dbad9">
+      <ID>Marital</ID>
+      <Name>Marital</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6acdebab-6e30-4b0a-91de-195c4c92ab52">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e0e35ad-1deb-41c9-8024-35e067180f7d">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>marital</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="07ab10f4-020d-4677-bd0c-8b59baf43a62">
+      <ID>Month</ID>
+      <Name>Month</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d86f081-c57e-494e-93de-a3ec8e00e872">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f503025d-3e96-42ba-8484-9be5cf01db5a">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8c8ef121-ea5d-4b8c-82cc-04eef6840850">
+      <ID>Nr#employed</ID>
+      <Name>Nr#employed</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ea36029c-d437-4774-9d7c-c0f6d5e2b0c3">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="371bc8bc-e4ae-4eca-9829-844d12f05aa7">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>nr_x0023_employed</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="13903ca1-ddb0-49d3-9d8c-cb13f5019dd8">
+      <ID>Pdays</ID>
+      <Name>Pdays</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1283b581-fe54-4fbd-92ca-ebcc544ef681">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f805ddc-61d3-467f-9048-3f4b77105ad7">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>pdays</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="347e562b-717a-4fbc-999c-74b965bd53ba">
+      <ID>Poutcome</ID>
+      <Name>Poutcome</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c1b3bb4c-9d27-492b-a9e6-234f7039f6fd">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b61639f-5cea-41bf-9fd7-4fd508967ddf">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>poutcome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="70b84551-dfdb-46d5-bca3-176797c14400">
+      <ID>Previous</ID>
+      <Name>Previous</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="11c30d27-719b-44bb-84d5-85c66486963b">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72be22bd-6519-4b78-8178-61deb6a4676b">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>previous</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3e9942b7-1ea6-4566-8696-79e6793a8e0d">
+      <ID>Y</ID>
+      <Name>Y</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f04347b-d022-4e46-8644-b215a9673dc2">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64b9ec76-6b09-45d7-9ee3-ad29b01f2069">
+            <TableID>dbo_Bank_Marketing_x0024_</TableID>
+            <ColumnID>y</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="d4a7f5f4-830c-4f9a-a011-89362dbb3db8">
+      <ID>Clustering</ID>
+      <Name>Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="59f96c6f-fc43-4793-b817-31885d5b2093">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9f98ce73-165a-466c-9685-6f4384967687">
+          <ID>Campaign</ID>
+          <Name>Campaign</Name>
+          <SourceColumnID>Campaign</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2e1bf1cf-5f19-4128-bfa9-b94794716f80">
+          <ID>Cons#conf#idx</ID>
+          <Name>Cons#conf#idx</Name>
+          <SourceColumnID>Cons#conf#idx</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fa7dd8cd-6dbf-4040-9830-f3dc70c55d30">
+          <ID>Cons#price#idx</ID>
+          <Name>Cons#price#idx</Name>
+          <SourceColumnID>Cons#price#idx</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7dc79bf6-101e-46e0-a03b-4cbdf3a59502">
+          <ID>Contact</ID>
+          <Name>Contact</Name>
+          <SourceColumnID>Contact</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="015018b6-83e3-432c-be07-43f30b292e1a">
+          <ID>Day Of Week</ID>
+          <Name>Day Of Week</Name>
+          <SourceColumnID>Day Of Week</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c9b7e34c-8796-4fb9-9300-ce4e90f0b887">
+          <ID>Default</ID>
+          <Name>Default</Name>
+          <SourceColumnID>Default</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3806d998-01a4-461a-8588-aeb26085e130">
+          <ID>Duration</ID>
+          <Name>Duration</Name>
+          <SourceColumnID>Duration</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a861f65d-8c95-4660-b49a-ced449ea75ff">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <SourceColumnID>Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7ad98467-05a9-48ee-a179-9e155f89a0b7">
+          <ID>Emp#var#rate</ID>
+          <Name>Emp#var#rate</Name>
+          <SourceColumnID>Emp#var#rate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5dcc1f5f-6bf3-4ade-ad2e-d60a45f50a8a">
+          <ID>Euribor3m</ID>
+          <Name>Euribor3m</Name>
+          <SourceColumnID>Euribor3m</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ee863a24-1ce3-421c-8844-3b1254fd5537">
+          <ID>Housing</ID>
+          <Name>Housing</Name>
+          <SourceColumnID>Housing</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="24afd32f-a69c-420c-abcb-f8ce78678946">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="fac08a8e-c0bc-4281-a6c2-9142fb264f61">
+          <ID>Job</ID>
+          <Name>Job</Name>
+          <SourceColumnID>Job</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="966d2974-4f05-491c-b3fc-30bc1d907356">
+          <ID>Loan</ID>
+          <Name>Loan</Name>
+          <SourceColumnID>Loan</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="28b8421e-f6bf-4f32-9760-36caef3b832d">
+          <ID>Marital</ID>
+          <Name>Marital</Name>
+          <SourceColumnID>Marital</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f17115d2-8994-40aa-ac8e-2e20b7e4edb5">
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <SourceColumnID>Month</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="85c13378-e9c2-4daf-b68e-0d695da3f424">
+          <ID>Nr#employed</ID>
+          <Name>Nr#employed</Name>
+          <SourceColumnID>Nr#employed</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fabc23d0-4194-4881-8114-d3f4ae21ecb1">
+          <ID>Pdays</ID>
+          <Name>Pdays</Name>
+          <SourceColumnID>Pdays</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c5d3a207-4aee-41d6-a6e8-2c12d97905fd">
+          <ID>Poutcome</ID>
+          <Name>Poutcome</Name>
+          <SourceColumnID>Poutcome</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="012c5012-7883-47a7-9e81-843c89ca8dd0">
+          <ID>Previous</ID>
+          <Name>Previous</Name>
+          <SourceColumnID>Previous</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="64f6b484-49c7-4f4f-b2f2-8b2a9b273d86">
+          <ID>Y</ID>
+          <Name>Y</Name>
+          <SourceColumnID>Y</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>
