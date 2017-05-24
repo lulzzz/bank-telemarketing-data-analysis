@@ -20,8 +20,12 @@
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>Bank Marketing.dmm</Name>
-      <FullPath>Bank Marketing.dmm</FullPath>
+      <Name>DT.dmm</Name>
+      <FullPath>DT.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clustering.dmm</Name>
+      <FullPath>Clustering.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
