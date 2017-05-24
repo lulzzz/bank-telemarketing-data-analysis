@@ -12,6 +12,12 @@
       <FullPath>Bank Marketing.ds</FullPath>
     </ProjectItem>
   </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Bank Marketing.dsv</Name>
+      <FullPath>Bank Marketing.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

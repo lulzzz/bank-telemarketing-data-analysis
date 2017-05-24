@@ -1,0 +1,148 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7e4d6cd7-ecba-42b1-92a9-e3544839a9ad" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bank Marketing</ID>
+  <Name>Bank Marketing</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Bank Marketing</DataSourceID>
+  <Schema>
+    <xs:schema id="Bank_x0020_Marketing" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Bank_x0020_Marketing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6520ed8b-58f8-4d82-96ae-fd429e72fd76">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Bank_Marketing_x0024_" msprop:design-time-name="ace3ab8c-6e82-45db-b8ca-4072d0ab928b" msprop:DbTableName="Bank_Marketing$" msprop:FriendlyName="Bank_Marketing$" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="919fd05b-570d-45db-89cc-b41f3c586aa6" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:double" minOccurs="0" />
+                  <xs:element name="age" msprop:design-time-name="04b15eef-090a-4478-ab1b-afcd8f51536a" msprop:DbColumnName="age" msprop:FriendlyName="age" type="xs:double" minOccurs="0" />
+                  <xs:element name="job" msprop:design-time-name="4a0f4834-53ed-4670-b37b-45cb1f6b15bf" msprop:DbColumnName="job" msprop:FriendlyName="job" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="marital" msprop:design-time-name="1d6729f2-f17e-4e58-8bb9-828df0074c45" msprop:DbColumnName="marital" msprop:FriendlyName="marital" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="education" msprop:design-time-name="20c366c6-efe6-4706-9cbb-da09a0d37ab6" msprop:DbColumnName="education" msprop:FriendlyName="education" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="default" msprop:design-time-name="53ceabff-cadc-4d93-8dff-e484f6692d1d" msprop:DbColumnName="default" msprop:FriendlyName="default" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="housing" msprop:design-time-name="0e38443b-2b56-43fa-ab2a-2905b073f8c1" msprop:DbColumnName="housing" msprop:FriendlyName="housing" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="loan" msprop:design-time-name="18316ee8-33e7-4364-aa8d-4cf1f538a9b2" msprop:DbColumnName="loan" msprop:FriendlyName="loan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="contact" msprop:design-time-name="5504405d-ec7a-4f74-b0a5-d7d46e37f73f" msprop:DbColumnName="contact" msprop:FriendlyName="contact" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="month" msprop:design-time-name="c6135001-7b13-403c-9b1b-21854a324a55" msprop:DbColumnName="month" msprop:FriendlyName="month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day_of_week" msprop:design-time-name="ac187784-4e94-43d0-940d-8be0aada7651" msprop:DbColumnName="day_of_week" msprop:FriendlyName="day_of_week" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="duration" msprop:design-time-name="45e0c8d4-4ba0-4b85-9c83-3f5ef7b26f17" msprop:DbColumnName="duration" msprop:FriendlyName="duration" type="xs:double" minOccurs="0" />
+                  <xs:element name="campaign" msprop:design-time-name="4de818aa-f605-4071-a9d4-0be8ab7d6fd5" msprop:DbColumnName="campaign" msprop:FriendlyName="campaign" type="xs:double" minOccurs="0" />
+                  <xs:element name="pdays" msprop:design-time-name="f84cc20a-f376-4691-b533-e216c434db74" msprop:DbColumnName="pdays" msprop:FriendlyName="pdays" type="xs:double" minOccurs="0" />
+                  <xs:element name="previous" msprop:design-time-name="a8e460cf-20c2-4105-8b74-c1439b0881ab" msprop:DbColumnName="previous" msprop:FriendlyName="previous" type="xs:double" minOccurs="0" />
+                  <xs:element name="poutcome" msprop:design-time-name="7b7dc2fa-092d-4f78-afa6-109c12c4de9d" msprop:DbColumnName="poutcome" msprop:FriendlyName="poutcome" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="emp_x0023_var_x0023_rate" msprop:design-time-name="9416b59a-7606-4ec8-83d8-dee513dc1a8f" msprop:DbColumnName="emp#var#rate" msprop:FriendlyName="emp#var#rate" type="xs:double" minOccurs="0" />
+                  <xs:element name="cons_x0023_price_x0023_idx" msprop:design-time-name="27a31bf6-e2cb-4c96-b5b5-c108c4344eb3" msprop:DbColumnName="cons#price#idx" msprop:FriendlyName="cons#price#idx" type="xs:double" minOccurs="0" />
+                  <xs:element name="cons_x0023_conf_x0023_idx" msprop:design-time-name="5ec019a6-cb4e-47ca-ac52-3507a649632e" msprop:DbColumnName="cons#conf#idx" msprop:FriendlyName="cons#conf#idx" type="xs:double" minOccurs="0" />
+                  <xs:element name="euribor3m" msprop:design-time-name="4e3f2826-b683-4067-b64b-eb4ef4a899b6" msprop:DbColumnName="euribor3m" msprop:FriendlyName="euribor3m" type="xs:double" minOccurs="0" />
+                  <xs:element name="nr_x0023_employed" msprop:design-time-name="5b97d70c-ed90-451f-a05b-92c15c89485e" msprop:DbColumnName="nr#employed" msprop:FriendlyName="nr#employed" type="xs:double" minOccurs="0" />
+                  <xs:element name="y" msprop:design-time-name="ec76c965-2272-4c46-99a6-2bd3fc92fd04" msprop:DbColumnName="y" msprop:FriendlyName="y" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Bank_x0020_Marketing xmlns="" />
+  </Schema>
+</DataSourceView>
