@@ -18,6 +18,12 @@
       <FullPath>Bank Marketing.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Bank Marketing.dmm</Name>
+      <FullPath>Bank Marketing.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
