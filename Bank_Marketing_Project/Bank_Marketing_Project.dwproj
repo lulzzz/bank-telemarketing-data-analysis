@@ -27,6 +27,10 @@
       <Name>Clustering.dmm</Name>
       <FullPath>Clustering.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>NB.dmm</Name>
+      <FullPath>NB.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>
