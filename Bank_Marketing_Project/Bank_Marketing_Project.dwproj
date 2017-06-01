@@ -20,16 +20,24 @@
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>Classification.dmm</Name>
-      <FullPath>Classification.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Clustering.dmm</Name>
       <FullPath>Clustering.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>NB.dmm</Name>
       <FullPath>NB.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Only_Numerical_DT.dmm</Name>
+      <FullPath>Only_Numerical_DT.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Classification.dmm</Name>
+      <FullPath>Classification.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clustering_noY.dmm</Name>
+      <FullPath>Clustering_noY.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
