@@ -7,7 +7,8 @@ I used **SSDT(SQL Server Data Tools)** for analyzing the data. Additional analys
 
 ## Results (Examples)
 <img src="https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/NB.png" width="70%">
-![DT](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/DT.png)
+<img src="https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/DT.png" width="70%">
+
 
 ## Presentation
 I included the final presentation file as pdf in "Presentation" folder.  
