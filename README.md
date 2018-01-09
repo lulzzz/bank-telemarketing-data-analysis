@@ -6,7 +6,7 @@ Main purpose of this analysis is to find out which factor affects customer to de
 I used **SSDT(SQL Server Data Tools)** for analyzing the data. Additional analysis are in pdf file (Presentation file).
 
 ## Results (Examples)
-![NB](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/NB.png)
+<img src="https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/NB.png" width="70%">
 ![DT](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/DT.png)
 
 ## Presentation
