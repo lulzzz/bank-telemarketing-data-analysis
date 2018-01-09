@@ -6,9 +6,9 @@ Main purpose of this analysis is to find out which factor affects customer to de
 I used SSDT(SQL Server Data Tools) for analyzing the data. Additional analysis are in pdf file(presentation file)
 
 ## Results
-![NB](https://raw.githubusercontent.com/monologg/bing-wallpaper/master/screenshot/NB.png)
-![DT](https://raw.githubusercontent.com/monologg/bing-wallpaper/master/screenshot/DT.png)
-![ANN](https://raw.githubusercontent.com/monologg/bing-wallpaper/master/screenshot/ANN.png)
+![NB](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-anlaysis/master/screenshot/NB.png)
+![DT](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-anlaysis/master/screenshot/DT.png)
+![ANN](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-anlaysis/master/screenshot/ANN.png)
 
 ## Presentation
 I included the final presentation file as pdf in "Presentation" folder.  
