@@ -3,9 +3,9 @@ This project was done during my 2017 spring semester of Business Intelligence cl
   
 Main purpose of this analysis is to find out which factor affects customer to deposit, and which month customer deposit the most.  
 
-I used SSDT(SQL Server Data Tools) for analyzing the data. Additional analysis are in pdf file (Presentation file). 
+I used **SSDT(SQL Server Data Tools)** for analyzing the data. Additional analysis are in pdf file (Presentation file).
 
-## Results
+## Results (Examples)
 ![NB](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/NB.png)
 ![DT](https://raw.githubusercontent.com/monologg/bank-telemarketing-data-analysis/master/screenshot/DT.png)
 
