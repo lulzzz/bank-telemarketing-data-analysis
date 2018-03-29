@@ -347,3 +347,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+#################################################################
+# Personal files
+submission.csv
+
+# Pycharm settings
+.idea/
